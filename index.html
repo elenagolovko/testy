@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillbox</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:300|Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min/style.css">
 </head>
 <body>
   <main class="main">
@@ -51,12 +51,12 @@
       <h2 class="main__form-title">Получи курс со скидкой</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fields">
-          <input class="form__field name-field" type="text" placeholder="Введите ваше имя">
-          <span class="field__error-handler visually-hidden">некорректное имя</span>
-          <input class="form__field tel-field" type="tel" placeholder="+7 (901) 845-94-34">
-          <span class="field__error-handler visually-hidden">некорректный телефон</span>
+          <input class="form__field name-field" type="text" placeholder="Введите ваше имя" >
+          <span class="field__error-handler">некорректное имя</span>
+          <input class="form__field tel-field" type="tel" placeholder="+7 (901) 845-94-34" pattern="/^\+7\s\(\d{3}\)\s[\d\- ]{7,10}$/i">
+          <span class="field__error-handler">некорректный телефон</span>
           <input class="form__field email-field" type="email" placeholder="skillbox@gmail.com">
-          <span class="field__error-handler visually-hidden">некорректный email</span>
+          <span class="field__error-handler">некорректный email</span>
           <input class="form__checkbox" id="agreement" type="checkbox">
           <label for="agreement" tabindex="0">
             <span class="agreement__text">Я согласен с условиями обработки 
