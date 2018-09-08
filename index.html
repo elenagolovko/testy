@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillbox</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:300|Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +22,15 @@
           <h2 class="visually-hidden">Цены на курс</h2>
           <div class="l-grid">
             <div class="grid__item grid__item--disabled">
-              <p class="main__full-price price">55 000</p>
+              <p class="price"><span class="main__full-price">55 000</span>&#8381;</p>
               <p class="main__price-description description">Полная стоимость курса</p>
             </div>
             <div class="grid__item grid__item--discount">
-              <p class="main__discount-price price">38 500</p>
+              <p class="main__discount-price price">38 500 &#8381;</p>
               <p class="main__price-description description">Скидка <span class="text-bold">30%</span> до 15 января</p>
             </div>
             <div class="grid__item grid__item--installment">
-              <p class="main__installment-price price">2 100</p>
+              <p class="main__installment-price price">2 100 &#8381;</p>
               <p class="main__price-description description">Рассрочка на 12 месяцев</p>
             </div>
             <div class="grid__item grid__item--bid">
@@ -54,7 +55,7 @@
           <span class="field__error-handler visually-hidden">некорректное имя</span>
           <input class="form__field tel-field" type="tel" placeholder="+7 (901) 845-94-34">
           <span class="field__error-handler visually-hidden">некорректный телефон</span>
-          <input class="form__field email-field" type="text" placeholder="skillbox@gmail.com">
+          <input class="form__field email-field" type="email" placeholder="skillbox@gmail.com">
           <span class="field__error-handler visually-hidden">некорректный email</span>
           <input class="form__checkbox" id="agreement" type="checkbox">
           <label for="agreement" tabindex="0">
@@ -68,5 +69,6 @@
       </form>
     </section>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
