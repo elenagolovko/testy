@@ -1,0 +1,27 @@
+{
+  "name": "testy",
+  "version": "1.0.0",
+  "description": "Test task for junior developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat-css": "^3.1.0",
+    "pump": "^3.0.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenagolovko/testy.git"
+  },
+  "author": "Golovko Elena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elenagolovko/testy/issues"
+  },
+  "homepage": "https://github.com/elenagolovko/testy#readme"
+}

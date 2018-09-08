@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillbox</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="main__container large-container">
+      <div class="small-container">
+        <a class="main__logo"><img src="img/logo.svg" width="86" height="19" alt="Логотип Skillbox"></a>
+
+        <h1 class="main__title">
+          <span class="main__title--small">Онлайн-курс</span>
+          Профессии будущего. Распродажа
+        </h1>
+        <p class="main__description">Курсы с индивидуальной проверкой заданий, огромной скидкой и подарками!</p>
+        <section class="main__prices">
+          <h2 class="visually-hidden">Цены на курс</h2>
+          <div class="l-grid">
+            <div class="grid__item grid__item--disabled">
+              <p class="main__full-price price">55 000</p>
+              <p class="main__price-description description">Полная стоимость курса</p>
+            </div>
+            <div class="grid__item grid__item--discount">
+              <p class="main__discount-price price">38 500</p>
+              <p class="main__price-description description">Скидка <span class="text-bold">30%</span> до 15 января</p>
+            </div>
+            <div class="grid__item grid__item--installment">
+              <p class="main__installment-price price">2 100</p>
+              <p class="main__price-description description">Рассрочка на 12 месяцев</p>
+            </div>
+            <div class="grid__item grid__item--bid">
+              <div class="bid__photos-group">
+                <img src="img/photos-group.png" width="141" height="41" alt="Фотографии людей подавших заявки на курс">
+              </div>
+              <p class="main__bid-description"><span class="bid-number text-bold">+448</span>Оставили заявки</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="main__form large-container">
+      <div class="main__timer-container timer-container">
+        <p class="timer__warning">До конца акции осталось</p>
+        <div class="timer"></div>
+      </div>
+      <h2 class="main__form-title">Получи курс со скидкой</h2>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fields">
+          <input class="form__field name-field" type="text" placeholder="Введите ваше имя">
+          <span class="field__error-handler visually-hidden">некорректное имя</span>
+          <input class="form__field tel-field" type="tel" placeholder="+7 (901) 845-94-34">
+          <span class="field__error-handler visually-hidden">некорректный телефон</span>
+          <input class="form__field email-field" type="text" placeholder="skillbox@gmail.com">
+          <span class="field__error-handler visually-hidden">некорректный email</span>
+          <input class="form__checkbox" id="agreement" type="checkbox">
+          <label for="agreement" tabindex="0">
+            <span class="agreement__text">Я согласен с условиями обработки 
+              <a class="agreement__link" href="#">персональных данных</a>
+            </span>
+          </label>			
+        </fieldset>
+        
+        <input class="form__button" type="submit" value="Отправить">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
